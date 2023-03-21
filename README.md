@@ -1,3 +1,5 @@
+![Mockup for feature A](http://monosnap.com/image/bOcxxxxLGF.png)
+
 # Group-6 project 1
 
 ## The project requirements are as follows:
