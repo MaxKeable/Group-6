@@ -5,15 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Space dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sono:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-  <div class="tile is-ancestor">
-  <h3 class="tile is-vertical">Imge of the day:</h3>
-  <img class="" src="" alt="NASA's space image of the day">
-  <h1>Time till launch</h1>
-  <p id="time-to-launch">Time:</p>
+  <nav class="navbar has-shadow">
+  <div class="navbar-brand">
+   <a href="" class="navbar-item">LOGO</a>
+  </div>
+
+  <div class="navbar-menu">
+    <div class="navbar-end"></div>
+    <a href="" class="navbar-item">More info</a>
+    <a href="" class="navbar-item">Recent Launch</a>
+  </div>
+  </nav>
+  <div class="box image">
+  <img class="" src="https://media.istockphoto.com/id/1035676256/photo/background-of-galaxy-and-stars.jpg?s=612x612&w=0&k=20&c=dh7eWJ6ovqnQZ9QwQQlq2wxqmAR7mgRlQTgaIylgBwc=" alt="NASA's space image of the day">
+  <h3 class="is-uppercase">NASA's Iamge of the day</h3>
+</div>
+<div class="launch-data section">
+  <h1 class="title is-1 mb-5">Most recent launch</h1>
+  <p class="subtitle is-3" id="time-to-launch">Time since launch:</p>
+</div>
+  <div class="container box info">
   <p>Mission Location:</p>
   <p></p>
   <p>Rocket used:</p>
@@ -21,6 +39,5 @@
   <p>Crew Info:</p>
   <p></p>
 </div>
-  
 </body>
 </html>
