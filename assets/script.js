@@ -26,3 +26,14 @@ $.get("https://api.spacexdata.com/v5/launches/latest", function (data) {
   // set the "time-udc" value as the innerHTML of the <p> tag with id "time-to-launch"
   $("#time-to-launch").html(timeUdc);
 });
+
+function make-globe(){
+     size: Math.random() / 3,
+    Globe()
+      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
+      .pointAltitude('size')
+      .pointColor('color')
+    (document.getElementById('globe'))
+}
+
+make-globe();
