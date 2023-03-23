@@ -25,4 +25,4 @@ Have a polished UI.
 ### Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
 
-## People in the group: Connor McNaught, Shiby Mathew, Donglan Chen, Max Keable
+### People in the group: Connor McNaught, Shiby Mathew, Donglan Chen, Max Keable
