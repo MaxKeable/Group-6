@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Space dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sono:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link
       rel="stylesheet"
@@ -13,16 +16,52 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
-    <h3>Imge of the day:</h3>
-    <img id="nasa-img" src="" alt="NASA's space image of the day" />
-    <h1>Time till launch</h1>
-    <p id="time-to-launch">Time:</p>
-    <p>Mission Location:</p>
-    <p></p>
-    <p>Rocket used:</p>
-    <p></p>
-    <p>Crew Info:</p>
-    <p></p>
+    <nav class="navbar is-white">
+      <div class="navbar-brand">
+        <a href="" class="navbar-item"></a>
+        <img src="" class="py-2 px-2" alt="" />
+      </div>
+      <div class="navbar-menu" id="nav-links">
+        <div class="navbar-end">
+          <a href="" class="navbar-item">More Info</a>
+          <a href="" class="navbar-item">About us</a>
+        </div>
+      </div>
+    </nav>
+  <section class="box">
+    <img class="has-text-centered" id="nasa-img" src="" alt="NASA's space image of the day" />
+    <h3 class="has-text-right">NASA image of the day</h3>
+  </section>
+
+    </section>
+        <div class="columns">
+          <div class="column is-5">
+            <p id="time-to-launch">Time to Launch:</p>
+          </div>
+          <div id="globe">
+
+          </div>
+    <section class="box mx-2 is-6">
+          <div class="column">
+            <p>Mission Location:</p>       
+            <p></p>
+          </div>
+          <div class="column">
+            <p>Rocket used:</p>
+            <p></p>
+          </div>
+          <div class="column">
+            <p>Crew Info:</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
     <script src="./assets/script.js"></script>
   </body>
 </html>
