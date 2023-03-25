@@ -3,6 +3,15 @@ var nasaKey = "Vs5yP6tMYxLhzzevSdf3FfQgHLaYKExehOojOtFT";
 var nasaUrl = "https://api.nasa.gov/planetary/apod?api_key=" + nasaKey;
 var dailyImg = document.getElementById("nasa-img");
 
+// Navbar burger responsive on smaller screens
+var burger = $('#burger');
+var menu = $('#nav-links');
+burger.on('click', function (event) {
+  event.preventDefault();
+  menu.toggleClass('is-active');
+  console.log('this is working');
+});
+
 // Fetch daily NASA image
 function getNasaImg() {
   fetch(nasaUrl)
