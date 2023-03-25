@@ -73,3 +73,14 @@ function displayData(data) {
 // N2 if any of those items are null, refetch
 // first function could check if any of the fields are null, if not, execute the next functions
 // --> populate the data in html
+
+function make-globe(){
+     size: Math.random() / 3,
+    Globe()
+      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
+      .pointAltitude('size')
+      .pointColor('color')
+    (document.getElementById('globe'))
+}
+
+make-globe();
