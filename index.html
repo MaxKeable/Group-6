@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Space dashboard</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sono:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+<title>Space Link</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sono:wght@200;300;400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="./assets/style.css" />
+      <script src="//unpkg.com/globe.gl"></script>
   </head>
   <body>
     <nav class="navbar is-white">
@@ -49,24 +51,33 @@
       </h3>
     </section>
 
-    <section class="">
-      <div class="columns">
-        <div class="column is-5 ml-6">
-          <p id="time-to-launch">Time to Launch:</p>
-        </div>
-        <div id="globe"></div>
-          <div class="column box ">
-            <p>Mission Location:</p>
-            <p></p>
-          </div>
-          <div class="column box ">
-            <p>Rocket used:</p>
+<section class="box mx-2 is-6">
+  <div class="columns">
+    <div class="column is-5 ml-6">
+      <p id="time-to-launch">Time to Launch:</p>
+    </div>
+    <div id="globe"></div>
+    <div class="column">
+      <p id="location">Mission Location:</p>       
+      <p></p>
+    </div>
+    <div class="column">
+      <p id="rocket-name">Rocket used:</p>
+    </div>
+  </div>
+</section>
+
             <p></p>
           </div>
           <div class="column box ">
             <p>Crew Info:</p>
             <p></p>
           </div>
+          <div class="column">
+            <p id="launch-description">Description</p>
+            <p></p>
+          </div>
+          
         </div>
       </div>
     </section>
