@@ -2,21 +2,24 @@
 var nasaKey = "Vs5yP6tMYxLhzzevSdf3FfQgHLaYKExehOojOtFT";
 var nasaUrl = "https://api.nasa.gov/planetary/apod?api_key=" + nasaKey;
 var dailyImg = document.getElementById("nasa-img");
-
-// Navbar burger responsive on smaller screens
-var burger = $('#burger');
-var menu = $('#nav-links');
-burger.on('click', function (event) {
-  event.preventDefault();
-  menu.toggleClass('is-active');
-});
-
 var rocketName = $("#rocket-name");
 var locationName = $("#location");
 var launchDescription = $("#launch-description");
+var missionName = $("#mission-name");
+var padName = $("#launch-pad-name");
+var temperature = $("#temperature");
+var weatherCondition = $("#weather-condition");
+var windSpeed = $("#wind-speed");
 
 var dataUrl = "https://fdo.rocketlaunch.live/json/launches/next/5";
 
+// Navbar burger responsive on smaller screens
+var burger = $("#burger");
+var menu = $("#nav-links");
+burger.on("click", function (event) {
+  event.preventDefault();
+  menu.toggleClass("is-active");
+});
 
 // Fetch daily NASA image
 function getNasaImg() {
@@ -70,8 +73,18 @@ function displayData(data) {
   if (dailyResult.pad.location.country === null) {
     locationName.text("Data not returned");
   }
-  rocketName.text(`Name of the Rocket : ${dailyResult.vehicle.name}`);
-  locationName.text(`Country : ${dailyResult.pad.location.country}`);
+
+  //Mission Information
+  locationName.text(`Misson Location : ${dailyResult.pad.location.country}`);
+  rocketName.text(`Rocket Used : ${dailyResult.vehicle.name}`);
+  padName.text(`Launch Pad Name : ${dailyResult.pad.location.name}`);
+  missionName.text(`Mission Name : ${dailyResult.missions[0].name}`);
+
+  //Weather Information
+  temperature.text(`${dailyResult.weather_temp}`);
+  weatherCondition.text(`${dailyResult.weather_condition}`);
+  windSpeed.text(`${dailyResult.weather_wind_mph} mph`);
+
   launchDescription.text(
     `Launch Description : ${dailyResult.launch_description}`
   );
@@ -82,8 +95,6 @@ function displayData(data) {
 // N2 if any of those items are null, refetch
 // first function could check if any of the fields are null, if not, execute the next functions
 // --> populate the data in html
-
-
 
 // Just commented this out as its not working yet :)
 // function make-globe(){
