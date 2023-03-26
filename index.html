@@ -1,149 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title>Space Link</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<link
-  href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sono:wght@200;300;400;500;600;700;800&display=swap"
-  rel="stylesheet"
-/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>SpaceLink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="./assets/style.css" />
-      <script src="//unpkg.com/globe.gl"></script>
-  </head>
-  <body>
-    <nav class="navbar is-white">
-      <div class="navbar-brand">
-        <a href="" class="navbar-item">
-        <img src="https://media1.giphy.com/media/3YHzWhog1v3HBk3oXm/giphy.gif?cid=6c09b952c33772173d2b1c5f61419189ac2d2e8adc939b47&rid=giphy.gif&ct=g" class="py-2 px-2" alt="" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sono:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <script src="//unpkg.com/globe.gl"></script>
+</head>
+
+<body>
+  <nav class="navbar is-white">
+    <div class="navbar-brand">
+      <a href="" class="navbar-item">
+        <img
+          src="./img/SPACELINK.jpg"
+          class="logo is-size-6" alt="site logo" />
       </a>
       <a href="" class="navbar-burger" id="burger">
         <span></span>
         <span></span>
         <span></span>
       </a>
+    </div>
+    <div class="navbar-menu" id="nav-links">
+      <div class="navbar-end">
+        <a href="#our-mission" class="navbar-item">Our Mission</a>
+        <a href="#how-it-works" class="navbar-item">How It Works</a>
       </div>
-      <div class="navbar-menu" id="nav-links">
-        <div class="navbar-end">
-          <a href="" class="navbar-item">Our Mission</a>
-          <a href="" class="navbar-item">How It Works</a>
-        </div>
-      </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="columns box time-to-launch is-centered my-6 is-centered">
-      <div class="column">
-      <h3 class="mx-4">Time to Launch:</h3>
+  <div class="columns time-to-launch is-centered is-centered">
+    <div class="column is-6">
+      <h3 class="">Time to Launch:</h3>
     </div>
-    <div class="column is-6 is-offset-3">
-      <p id="time-to-launch">TEST</p>
+    <div class="column is-3">
+      <p id="time-to-launch">LAUNCH COUNTDOWN</p>
     </div>
-    <div class="column is-6 is-offset-3">
+    <div class="column is-1 is-offset-3">
       <p id="globe"></p>
     </div>
-    </div>
+  </div>
 
-    <!-- <div class="columns box weather">
-      <h2 class="mx-4">Weather Info:</h2>
-      <div class="column">
-        <h3 class="mx-4">Temperature:</h3>
-        <p class="mx-4" id="temperature"></p>
-      </div> -->
-
-    <section class="mx-2 is-6 dashboard-info my-6 ">
-      <div class="columns is-multiline is-mobile is-centered">
-        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop mx-3 tile">
-          <h3>Mission Location:</h3>       
+  <section class="mx-2 is-6 dashboard-info my-6 ">
+    <div class="columns is-multiline is-mobile is-centered">
+      <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop mx-3 tile is-flex">
+        <div class="is-flex-direction-column">
+          <h3>Mission Location:</h3>
           <p class="" id="location"></p>
         </div>
-        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop mx-3 tile">
+      </div>
+      <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop mx-3 tile is-flex">
+        <div class="is-flex-direction-column">
           <h3>Rocket used:</h3>
           <p id="rocket-name"></p>
         </div>
-        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop mx-3 tile">
+      </div>
+      <div class="column is-12-mobile is-3-desktop box  is-2 is-min-desktop mx-3 tile is-flex">
+        <div class="is-flex-direction-column">
           <h3>Crew Info:</h3>
           <p id="crew-info"></p>
         </div>
-        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop mx-3 tile">
+      </div>
+      <div class="column is-12-mobile is-3-desktop box  is-2 is-min-desktop mx-3 tile is-flex">
+        <div class="is-flex-direction-column">
           <h3>Launch pad name:</h3>
           <p id="launch-pad-name"></p>
         </div>
-        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop mx-3 tile">
+      </div>
+      <div class="column is-12-mobile is-3-desktop box  is-2 is-min-desktop mx-3 tile is-flex">
+        <div class="is-flex-direction-column">
           <h3>Mission name:</h3>
           <p id="mission-name"></p>
         </div>
       </div>
-    </section>
-    
-<section>
-  <div class="columns box weather">
-    <h2 class="mx-4">Weather Info:</h2>
-    <div class="column">
-      <h3 class="mx-4">Temperature:</h3>
-      <p class="mx-4" id="temperature"></p>
     </div>
-    <div class="column">
-      <h3 class="mx-4">Weather Condition:</h3>
-      <p class="mx-4" id="weather-condition"></p>
-    </div>
-    <div class="column">
-      <h3 class="mx-4">Wind Speed:</h3>
-      <p class="mx-4" id="wind-speed"></p>
-    </div>
-  </div>
-</section>
+  </section>
 
-    <section class="">
-      <div class="columns is-centered">
-        <div class="column is-6">
-          <figure class="image">
-            <img src="" id="nasa-img" alt="NASA's space image of the day">
-          </figure>
-        </div>
-      </div>      
-      <h4 class="has-text-right is-uppercase mt-2 mr-4 mb-3">
-        NASA's space image of the day
+  <section>
+    <div class="columns box weather">
+      <h2 class="mx-4">Weather Info:</h2>
+      <div class="column">
+        <h3 class="mx-4">Temperature:</h3>
+        <p class="mx-4" id="temperature"></p>
+      </div>
+      <div class="column">
+        <h3 class="mx-4">Weather Condition:</h3>
+        <p class="mx-4" id="weather-condition"></p>
+      </div>
+      <div class="column">
+        <h3 class="mx-4">Wind Speed:</h3>
+        <p class="mx-4" id="wind-speed"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="columns is-centered">
+      <div class="column is-6">
+        <figure class="image">
+          <img src="" id="nasa-img" alt="NASA's space image of the day">
+        </figure>
+      </div>
+    </div>
+    <h4 class="has-text-right is-uppercase mt-2 mr-4 mb-3">
+      NASA's space image of the day
       </h3>
-    </section>
-    <section class="columns is-8 mx-4 my-6 is-centered">
-      <div class="column box mx-4 mission-how is-centered">
-        <h3>Our Mission:</h3>
-        <p>Our website serves as the ultimate SpaceX launch dashboard, providing you with the most up-to-date and comprehensive information about all things SpaceX. Our website delivers everything you need to know about SpaceX launches, all in one place. Whether you're a space enthusiast or just curious about SpaceX's latest launches, our mission is to keep you informed and engaged with the latest happenings in the space industry. Join us on our journey to explore the unknown reaches of space with SpaceX.</p>
-      </div>
-    
-      <div class="column box mx-4 mission-how">
-        <h3>How It Works</h3>
-        <p>In order to keep you informed and engaged with the latest information on SpaceX launches, and to help you explore the unknown reaches of space. We utilize a variety of API's, including the SpaceX API to gather launch information, the NASA API to display the image of the day, and the p5.js Globe API to create an interactive globe that displays the location of each launch. Join us on our journey and discover the excitement of space exploration with SpaceX.</p>
-      </div>
-    </section>
+  </section>
+  <section class="columns is-8 mx-4 my-6 is-centered">
+    <div id="our-mission" class="column box mx-4 mission-how is-centered">
+      <h3>Our Mission:</h3>
+      <p>Our website serves as the ultimate SpaceX launch dashboard, providing you with the most up-to-date and
+        comprehensive information about all things SpaceX. Our website delivers everything you need to know about SpaceX
+        launches, all in one place. Whether you're a space enthusiast or just curious about SpaceX's latest launches,
+        our mission is to keep you informed and engaged with the latest happenings in the space industry. Join us on our
+        journey to explore the unknown reaches of space with SpaceX.</p>
+    </div>
 
-    <!-- footer -->
-    <footer class="footer">
-      <section class="section">
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column">
-              <h1 class="title has-text-centered">Contact Us:</h1>
-              <div class="">
-                <p id="launch-description">Description</p>
-                <p></p>
-              </div>
+    <div id="how-it-works" class="column box mx-4 mission-how">
+      <h3>How It Works</h3>
+      <p>In order to keep you informed and engaged with the latest information on SpaceX launches, and to help you
+        explore the unknown reaches of space. We utilize a variety of API's, including the SpaceX API to gather launch
+        information, the NASA API to display the image of the day, and the p5.js Globe API to create an interactive
+        globe that displays the location of each launch. Join us on our journey and discover the excitement of space
+        exploration with SpaceX.</p>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <section class="section has-text-centered">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column">
+            <h4 class="title has-text-centered">Contact Us:</h4>
+            <div class="column contact">
+              <ul>
+                <li><a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+                <li><a href="mailto:info@example.com">info@example.com</a></li>
+              </ul>
+            </div>
+            <div class="line is-centered">
+            </div>
+            <div class="has-text-centered">
+              <p id="launch-description">Description</p>
+              <p></p>
             </div>
           </div>
         </div>
-      </section>
-    </footer>
+      </div>
+    </section>
+  </footer>
 
-    <script src="./assets/script.js"></script>
-  </body>
+
+  <script src="./assets/script.js"></script>
+</body>
+
 </html>
