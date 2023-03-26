@@ -4,10 +4,53 @@ body {
     background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80');
 }
 
-.dashboard-info h3 {
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h3 {
     font-size: 1.5em;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.time-to-launch {
+    max-width: 800px;
+}
+
+.tile {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.weather {
+}
+
+.weather h2 {
+    min-width: 200px;
 }
 
 figure {
     border: 5px solid #fff;
 }
+
+.mission-how {
+    max-width: 400px;
+}
+
+
+@media (max-width: 767px) {
+    /* styles to apply when screen width is 767px or smaller */
+  }
+  

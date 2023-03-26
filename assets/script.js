@@ -74,16 +74,17 @@ function displayData(data) {
     locationName.text("Data not returned");
   }
 
-  //Mission Information
-  locationName.text(`Misson Location : ${dailyResult.pad.location.country}`);
-  rocketName.text(`Rocket Used : ${dailyResult.vehicle.name}`);
-  padName.text(`Launch Pad Name : ${dailyResult.pad.location.name}`);
-  missionName.text(`Mission Name : ${dailyResult.missions[0].name}`);
+  locationName.text(`${dailyResult.pad.location.country}`);
+  rocketName.text(`${dailyResult.vehicle.name}`);
+  padName.text(`${dailyResult.pad.location.name}`);
+  missionName.text(`${dailyResult.missions[0].name}`);
+
 
   //Weather Information
   temperature.text(`${dailyResult.weather_temp}`);
   weatherCondition.text(`${dailyResult.weather_condition}`);
   windSpeed.text(`${dailyResult.weather_wind_mph} mph`);
+
 
   launchDescription.text(
     `Launch Description : ${dailyResult.launch_description}`
