@@ -9,7 +9,6 @@ var menu = $('#nav-links');
 burger.on('click', function (event) {
   event.preventDefault();
   menu.toggleClass('is-active');
-  console.log('this is working');
 });
 
 var rocketName = $("#rocket-name");
@@ -84,13 +83,16 @@ function displayData(data) {
 // first function could check if any of the fields are null, if not, execute the next functions
 // --> populate the data in html
 
-function make-globe(){
-     size: Math.random() / 3,
-    Globe()
-      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
-      .pointAltitude('size')
-      .pointColor('color')
-    (document.getElementById('globe'))
-}
 
-make-globe();
+
+// Just commented this out as its not working yet :)
+// function make-globe(){
+//      size: Math.random() / 3,
+//     Globe()
+//       .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
+//       .pointAltitude('size')
+//       .pointColor('color')
+//     (document.getElementById('globe'))
+// }
+
+// make-globe();
