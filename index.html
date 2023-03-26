@@ -7,7 +7,6 @@
 <title>Space Link</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-p/ZyhJt8E2ST08l9t43F+IugrH8ztvF0r0IyedYkYcJqq+nSR2EB86i9WsIrkM7ZjyzWsgtRJzCmxumIWk2Ykw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <link
   href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sono:wght@200;300;400;500;600;700;800&display=swap"
@@ -42,60 +41,67 @@
       </div>
     </nav>
 
-    <section class="mx-2 is-6 dashboard-info">
-      <div class="columns is-multiline is-mobile">
-        <div class="column is-12-mobile is-3-desktop ml-3 box is-2 is-min-desktop">
-          <h3 id="time-to-launch">Time to Launch:</h3>
-          <p></p>
+    <div class="columns box time-to-launch is-centered my-6 is-centered">
+      <div class="column">
+      <h3 class="mx-4">Time to Launch:</h3>
+    </div>
+    <div class="column is-6 is-offset-3">
+      <p id="time-to-launch">TEST</p>
+    </div>
+    <div class="column is-6 is-offset-3">
+      <p id="globe"></p>
+    </div>
+    </div>
+
+    <!-- <div class="columns box weather">
+      <h2 class="mx-4">Weather Info:</h2>
+      <div class="column">
+        <h3 class="mx-4">Temperature:</h3>
+        <p class="mx-4" id="temperature"></p>
+      </div> -->
+
+    <section class="mx-2 is-6 dashboard-info my-6 ">
+      <div class="columns is-multiline is-mobile is-centered">
+        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop mx-3 tile">
+          <h3>Mission Location:</h3>       
+          <p class="" id="location"></p>
         </div>
-        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop">
-          <h3 id="location">Mission Location:</h3>       
-          <p></p>
+        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop mx-3 tile">
+          <h3>Rocket used:</h3>
+          <p id="rocket-name"></p>
         </div>
-        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop">
-          <h3 id="rocket-name">Rocket used:</h3>
+        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop mx-3 tile">
+          <h3>Crew Info:</h3>
+          <p id="crew-info"></p>
         </div>
-        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop">
-          <h3 id="crew-info">Crew Info:</h3>
-          <p></p>
+        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop mx-3 tile">
+          <h3>Launch pad name:</h3>
+          <p id="launch-pad-name"></p>
         </div>
-        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop">
-          <h3 id="launch-pad-name">Launch pad name:</h3>
-          <p></p>
-        </div>
-        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop">
-          <h3 id="mission-name">Mission name:</h3>
-          <p></p>
+        <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop mx-3 tile">
+          <h3>Mission name:</h3>
+          <p id="mission-name"></p>
         </div>
       </div>
     </section>
     
-    
-    
-    
-
 <section>
-  <div class="columns box">
-    <h2>Weather Info:</h2>
+  <div class="columns box weather">
+    <h2 class="mx-4">Weather Info:</h2>
     <div class="column">
-      <h3>Temperature:</h3>
-      <p id="temperature"></p>
+      <h3 class="mx-4">Temperature:</h3>
+      <p class="mx-4" id="temperature"></p>
     </div>
     <div class="column">
-      <h3>Weather Condition:</h3>
-      <p id="weather-condition"></p>
+      <h3 class="mx-4">Weather Condition:</h3>
+      <p class="mx-4" id="weather-condition"></p>
     </div>
     <div class="column">
-      <h3>Wind Speed:</h3>
-      <p id="wind-speed"></p>
+      <h3 class="mx-4">Wind Speed:</h3>
+      <p class="mx-4" id="wind-speed"></p>
     </div>
   </div>
 </section>
-
-          <div class="column box">
-            <p id="launch-description">Description</p>
-            <p></p>
-          </div>
 
     <section class="">
       <div class="columns is-centered">
@@ -105,17 +111,17 @@
           </figure>
         </div>
       </div>      
-      <h3 class="has-text-right is-uppercase mt-2 mr-4 mb-3">
+      <h4 class="has-text-right is-uppercase mt-2 mr-4 mb-3">
         NASA's space image of the day
       </h3>
     </section>
-    <section class="columns is-variable is-8">
-      <div class="column box">
+    <section class="columns is-8 mx-4 my-6 is-centered">
+      <div class="column box mx-4 mission-how is-centered">
         <h3>Our Mission:</h3>
         <p>Our website serves as the ultimate SpaceX launch dashboard, providing you with the most up-to-date and comprehensive information about all things SpaceX. Our website delivers everything you need to know about SpaceX launches, all in one place. Whether you're a space enthusiast or just curious about SpaceX's latest launches, our mission is to keep you informed and engaged with the latest happenings in the space industry. Join us on our journey to explore the unknown reaches of space with SpaceX.</p>
       </div>
     
-      <div class="column box">
+      <div class="column box mx-4 mission-how">
         <h3>How It Works</h3>
         <p>In order to keep you informed and engaged with the latest information on SpaceX launches, and to help you explore the unknown reaches of space. We utilize a variety of API's, including the SpaceX API to gather launch information, the NASA API to display the image of the day, and the p5.js Globe API to create an interactive globe that displays the location of each launch. Join us on our journey and discover the excitement of space exploration with SpaceX.</p>
       </div>
@@ -126,8 +132,12 @@
       <section class="section">
         <div class="container">
           <div class="columns is-centered">
-            <div class="column is-half">
-              <h1 class="title has-text-centered">About Us</h1>
+            <div class="column">
+              <h1 class="title has-text-centered">Contact Us:</h1>
+              <div class="">
+                <p id="launch-description">Description</p>
+                <p></p>
+              </div>
             </div>
           </div>
         </div>

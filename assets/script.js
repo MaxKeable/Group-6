@@ -70,8 +70,23 @@ function displayData(data) {
   if (dailyResult.pad.location.country === null) {
     locationName.text("Data not returned");
   }
+<<<<<<< Updated upstream
   rocketName.text(`Name of the Rocket : ${dailyResult.vehicle.name}`);
   locationName.text(`Country : ${dailyResult.pad.location.country}`);
+=======
+
+  //Mission Information
+  locationName.text(`${dailyResult.pad.location.country}`);
+  rocketName.text(`${dailyResult.vehicle.name}`);
+  padName.text(`${dailyResult.pad.location.name}`);
+  missionName.text(`${dailyResult.missions[0].name}`);
+
+  //Weather Information
+  temperature.text(`${dailyResult.weather_temp}`);
+  weatherCondition.text(`${dailyResult.weather_condition}`);
+  windSpeed.text(`${dailyResult.weather_wind_mph} mph`);
+
+>>>>>>> Stashed changes
   launchDescription.text(
     `Launch Description : ${dailyResult.launch_description}`
   );
