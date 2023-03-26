@@ -7,6 +7,8 @@
 <title>Space Link</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-p/ZyhJt8E2ST08l9t43F+IugrH8ztvF0r0IyedYkYcJqq+nSR2EB86i9WsIrkM7ZjyzWsgtRJzCmxumIWk2Ykw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <link
   href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sono:wght@200;300;400;500;600;700;800&display=swap"
   rel="stylesheet"
@@ -24,7 +26,7 @@
     <nav class="navbar is-white">
       <div class="navbar-brand">
         <a href="" class="navbar-item">
-        <img src="" class="py-2 px-2" alt="" />
+        <img src="https://media1.giphy.com/media/3YHzWhog1v3HBk3oXm/giphy.gif?cid=6c09b952c33772173d2b1c5f61419189ac2d2e8adc939b47&rid=giphy.gif&ct=g" class="py-2 px-2" alt="" />
       </a>
       <a href="" class="navbar-burger" id="burger">
         <span></span>
@@ -34,57 +36,99 @@
       </div>
       <div class="navbar-menu" id="nav-links">
         <div class="navbar-end">
-          <a href="" class="navbar-item">More Info</a>
-          <a href="" class="navbar-item">About us</a>
+          <a href="" class="navbar-item">Our Mission</a>
+          <a href="" class="navbar-item">How It Works</a>
         </div>
       </div>
     </nav>
-    <section class="box">
-      <img
-        class="has-text-centered"
-        id="nasa-img"
-        src=""
-        alt="NASA's space image of the day"
-      />
-      <h3 class="has-text-right is-uppercase mt-2 mr-4">
-        NASA image of the day
-      </h3>
-    </section>
 
-<section class="box mx-2 is-6">
+<section class="mx-2 is-6 dashboard-info">
   <div class="columns">
-    <div class="column is-5 ml-6">
-      <p id="time-to-launch">Time to Launch:</p>
-    </div>
-    <div id="globe"></div>
-    <div class="column">
-      <p id="location">Mission Location:</p>       
+    <div class="column is-3 ml-3 box">
+      <h3 id="time-to-launch">Time to Launch:</h3>
       <p></p>
     </div>
-    <div class="column">
-      <p id="rocket-name">Rocket used:</p>
+    <div id="globe"></div>
+    <div class="column box">
+      <h3 id="location">Mission Location:</h3>       
+      <p></p>
+    </div>
+    <div class="column box">
+      <h3 id="rocket-name">Rocket used:</h3>
+    </div>
+    <div class="column box">
+      <h3 id="crew-info">Crew Info:</h3>
+      <p></p>
+    </div>
+    <div class="column box">
+      <h3 id="launch-pad-name">Launch pad name:</h3>
+      <p></p>
+    </div>
+    <div class="column box">
+      <h3 id="mission-name">Mission name:</h3>
+      <p></p>
     </div>
   </div>
 </section>
 
-            <p></p>
-          </div>
-          <div class="column box ">
-            <p>Crew Info:</p>
-            <p></p>
-          </div>
-          <div class="column">
+<section>
+  <div class="columns box">
+    <h2>Weather Info:</h2>
+    <div class="column">
+      <h3>Temperature:</h3>
+      <p id="temperature"></p>
+    </div>
+    <div class="column">
+      <h3>Weather Condition:</h3>
+      <p id="weather-condition"></p>
+    </div>
+    <div class="column">
+      <h3>Wind Speed:</h3>
+      <p id="wind-speed"></p>
+    </div>
+  </div>
+</section>
+
+          <div class="column box">
             <p id="launch-description">Description</p>
             <p></p>
           </div>
-          
+
+    <section class="">
+      <div class="columns is-centered">
+        <div class="column is-6">
+          <figure class="image">
+            <img src="" id="nasa-img" alt="NASA's space image of the day">
+          </figure>
         </div>
+      </div>      
+      <h3 class="has-text-right is-uppercase mt-2 mr-4 mb-3">
+        NASA's space image of the day
+      </h3>
+    </section>
+    <section class="columns is-variable is-8">
+      <div class="column box">
+        <h3>Our Mission:</h3>
+        <p>Our website serves as the ultimate SpaceX launch dashboard, providing you with the most up-to-date and comprehensive information about all things SpaceX. Our website delivers everything you need to know about SpaceX launches, all in one place. Whether you're a space enthusiast or just curious about SpaceX's latest launches, our mission is to keep you informed and engaged with the latest happenings in the space industry. Join us on our journey to explore the unknown reaches of space with SpaceX.</p>
+      </div>
+    
+      <div class="column box">
+        <h3>How It Works</h3>
+        <p>In order to keep you informed and engaged with the latest information on SpaceX launches, and to help you explore the unknown reaches of space. We utilize a variety of API's, including the SpaceX API to gather launch information, the NASA API to display the image of the day, and the p5.js Globe API to create an interactive globe that displays the location of each launch. Join us on our journey and discover the excitement of space exploration with SpaceX.</p>
       </div>
     </section>
 
     <!-- footer -->
     <footer class="footer">
-      <div class="content">About us</div>
+      <section class="section">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <h1 class="title has-text-centered">About Us</h1>
+            </div>
+          </div>
+        </div>
+      </section>
     </footer>
 
     <script src="./assets/script.js"></script>

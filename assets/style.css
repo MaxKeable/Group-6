@@ -1,4 +1,13 @@
 
 body {
     font-family: 'Roboto Mono', monospace;
+    background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80');
+}
+
+.dashboard-info h3 {
+    font-size: 1.5em;
+}
+
+figure {
+    border: 5px solid #fff;
 }
