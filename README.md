@@ -1,5 +1,5 @@
 
-# Project Title
+# SpaceLink
 
 A brief description of what this project does and who it's for
 
@@ -11,7 +11,10 @@ Any additional information goes here
 
 ## Authors
 
-- [@octokatherine](https://www.github.com/octokatherine)
+- [@DonglanChen] (https://github.com/Chenson92)
+- [@MaxKeable] (https://github.com/MaxKeable)
+- [@ShibyMathew] (https://github.com/Shiby-Mathew)
+- [@connorMcNaught] (https://github.com/con118)
 
 ## Color Reference
 
