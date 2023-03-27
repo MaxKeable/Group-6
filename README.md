@@ -28,7 +28,8 @@ Any additional information goes here
 
 ## Demo
 
-Insert gif or link to demo
+Link to the repository: https://github.com/MaxKeable/SpaceLink
+Link to the Demo Site: 
 
 
 ## Documentation
@@ -39,12 +40,14 @@ Insert gif or link to demo
 ## Screenshots
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+* Insert
 
 
 ## Marking criteria
 ## Optimizations
 
 What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
+
 
 
 ## Roadmap
