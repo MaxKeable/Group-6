@@ -1,8 +1,19 @@
 
 # SpaceLink
 
-A brief description of what this project does and who it's for
+Our website serves as the ultimate SpaceX launch dashboard, providing you with the most up-to-date and
+comprehensive information about all things SpaceX. Our website delivers everything you need to know about SpaceX
+launches, all in one place. Whether you're a space enthusiast or just curious about SpaceX's latest launches,
+our mission is to keep you informed and engaged with the latest happenings in the space industry. Join us on our
+journey to explore the unknown reaches of space with SpaceX.
 
+## How It Works
+
+Our website serves as the ultimate SpaceX launch dashboard, providing you with the most up-to-date and
+comprehensive information about all things SpaceX. Our website delivers everything you need to know about SpaceX
+launches, all in one place. Whether you're a space enthusiast or just curious about SpaceX's latest launches,
+our mission is to keep you informed and engaged with the latest happenings in the space industry. Join us on our
+journey to explore the unknown reaches of space with SpaceX.
 
 ## Appendix
 
@@ -34,6 +45,10 @@ Any additional information goes here
 
 - Link to the repository: https://github.com/MaxKeable/SpaceLink
 - Link to the Demo Site: 
+
+## API Reference
+
+
 
 
 ## Documentation
@@ -93,16 +108,19 @@ Any additional information goes here
 ## Badges
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-## Acknowledgements
+## Acknowledgements/ Reference
 
  - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
  - [Awesome README](https://github.com/matiassingers/awesome-readme)
  - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+ - [Globe.gl Documentation] (https://globe.gl/)
+ - [Bulma Documentation] (https://bulma.io/documentation/)
+ - [Markdown License Badge] (https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
 
 ## FAQ
 
-#### Question 1
+#### Why did we choose to base our project around rockets
 
 Answer 1
 
