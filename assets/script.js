@@ -187,8 +187,63 @@ function displayData(data) {
         "location": "French Guiana",
         "latitude": 5.2,
         "longitude": -52.8
+      },
+      {
+    "name": "Alcantara Launch Site",
+    "location": "Brazil",
+    "latitude": -2.3,
+    "longitude": -44.4
+      },
+      {
+        "name": "Andøya Space Center",
+        "location": "Norway",
+        "latitude": 69.3,
+        "longitude": 16.0
+      },
+      {
+        "name": "Svalbard Rocket Range",
+        "location": "Norway",
+        "latitude": 78.3,
+        "longitude": 15.5
+      },
+      {
+      "name": "North Korean Space Launch Facility",
+      "location": "North Korea",
+      "latitude": 39.0675,
+      "longitude": 125.7403
+      },
+      {
+        "name": "Wenchang Spacecraft Launch Site",
+        "location": "China",
+        "latitude": 19.5243,
+        "longitude": 110.9308
+      },
+      {
+        "name": "Blue Origin West Texas Launch Site",
+        "location": "Texas, USA",
+        "latitude": 32.0708,
+        "longitude": -104.7475
+      },
+      {
+        "name": "Vostochny Cosmodrome",
+        "location": "Russia",
+        "latitude": 51.87,
+        "longitude": 128.3317
+      },
+      {
+        "name": "Pacific Spaceport Complex - Alaska",
+        "location": "Alaska, USA",
+        "latitude": 57.47,
+        "longitude": -152.35
+      },
+      {
+        "name": "Cape Canaveral Space Force Station",
+        "location": "Florida, USA",
+        "latitude": 28.4906,
+        "longitude": -80.5242
       }
-    ];
+  
+      ];
 
     // Convert the array to the format expected by Globe.gl
     const gData = rocketLaunchSites.map(site => ({
