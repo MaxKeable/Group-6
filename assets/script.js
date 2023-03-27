@@ -1,6 +1,8 @@
 // NASA daily image
 var nasaKey = "Vs5yP6tMYxLhzzevSdf3FfQgHLaYKExehOojOtFT";
-var nasaUrl = "https://api.nasa.gov/planetary/apod?api_key=" + nasaKey;
+// make NASA daily media specific to images only
+var nasaUrl =
+  "https://api.nasa.gov/planetary/apod?api_key=" + nasaKey + "&thumbs=True";
 var dailyImg = document.getElementById("nasa-img");
 var rocketName = $("#rocket-name");
 var locationName = $("#location");
@@ -11,7 +13,7 @@ var temperature = $("#temperature");
 var weatherCondition = $("#weather-condition");
 var windSpeed = $("#wind-speed");
 
-var dataUrl = "https://fdo.rocketlaunch.live/json/launches/next/5";
+const dataUrl = "https://fdo.rocketlaunch.live/json/launches/next/5";
 
 // Navbar burger responsive on smaller screens
 var burger = $("#burger");
@@ -29,21 +31,22 @@ function getNasaImg() {
     })
     .then(function (data) {
       // Set the source of the image element to the image URL.
-      dailyImg.src = data.url;
+      if (data.thumbnail_url) {
+        dailyImg.src = data.thumbnail_url;
+      } else {
+        dailyImg.src = data.url;
+      }
     });
 }
+// // make an HTTP GET request using jQuery
+// $.get("https://api.spacexdata.com/v5/launches/latest", function (data) {
+//   // extract the "time-udc" value from the response JSON
+//   const timeUdc = data["time-udc"];
+//   console.log(timeUdc);
 
-getNasaImg();
-
-// make an HTTP GET request using jQuery
-$.get("https://api.spacexdata.com/v5/launches/latest", function (data) {
-  // extract the "time-udc" value from the response JSON
-  const timeUdc = data["time-udc"];
-  console.log(timeUdc);
-
-  // set the "time-udc" value as the innerHTML of the <p> tag with id "time-to-launch"
-  $("#time-to-launch").html(timeUdc);
-});
+//   // set the "time-udc" value as the innerHTML of the <p> tag with id "time-to-launch"
+//   $("#time-to-launch").html(timeUdc);
+// });
 
 //Fetch data from API
 
@@ -73,24 +76,55 @@ function displayData(data) {
   if (dailyResult.pad.location.country === null) {
     locationName.text("Data not returned");
   }
+  // if next rocket launch time is not available, timer context will display "Data not returned"
+  if (dailyResult.win_open == null) {
+    timer.text("Data not returned");
+  } else {
+    let launchTime = new Date(dailyResult.win_open);
+    setInterval(function () {
+      timeBetweenDates(launchTime);
+    }, 1000);
+  }
 
   locationName.text(`${dailyResult.pad.location.country}`);
   rocketName.text(`${dailyResult.vehicle.name}`);
   padName.text(`${dailyResult.pad.location.name}`);
   missionName.text(`${dailyResult.missions[0].name}`);
 
-
   //Weather Information
   temperature.text(`${dailyResult.weather_temp}`);
   weatherCondition.text(`${dailyResult.weather_condition}`);
   windSpeed.text(`${dailyResult.weather_wind_mph} mph`);
-
 
   launchDescription.text(
     `Launch Description : ${dailyResult.launch_description}`
   );
 }
 
+// countdown timer between next launch time and current time
+function timeBetweenDates(launchTime) {
+  // create a new Date object with the current date and time
+  let currentDate = new Date();
+  var difference = launchTime - currentDate;
+  if (difference <= 0) {
+    clearInterval(timer);
+  } else {
+    var seconds = Math.floor(difference / 1000);
+    var minutes = Math.floor(seconds / 60);
+    var hours = Math.floor(minutes / 60);
+    var days = Math.floor(hours / 24);
+
+    hours %= 24;
+    minutes %= 60;
+    seconds %= 60;
+
+    $("#days").text(days);
+    $("#hours").text(hours);
+    $("#minutes").text(minutes);
+    $("#seconds").text(seconds);
+  }
+}
+getNasaImg();
 // make a helper function that displays items
 // N1 if any of those items are null, display custom message
 // N2 if any of those items are null, refetch
