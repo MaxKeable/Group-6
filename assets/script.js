@@ -97,14 +97,113 @@ function displayData(data) {
 // first function could check if any of the fields are null, if not, execute the next functions
 // --> populate the data in html
 
-// Just commented this out as its not working yet :)
-// function make-globe(){
-//      size: Math.random() / 3,
-//     Globe()
-//       .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
-//       .pointAltitude('size')
-//       .pointColor('color')
-//     (document.getElementById('globe'))
-// }
+    const rocketLaunchSites = [
+      {
+        "name": "Baikonur Cosmodrome",
+        "location": "Kazakhstan",
+        "latitude": 45.6,
+        "longitude": 63.3
+      },
+      {
+        "name": "Kennedy Space Center",
+        "location": "Florida, USA",
+        "latitude": 28.5,
+        "longitude": -80.6
+      },
+      {
+        "name": "Vandenberg Air Force Base",
+        "location": "California, USA",
+        "latitude": 34.7,
+        "longitude": -120.5
+      },
+      {
+        "name": "Jiuquan Satellite Launch Center",
+        "location": "China",
+        "latitude": 40.9,
+        "longitude": 100.3
+      },
+      {
+        "name": "Tanegashima Space Center",
+        "location": "Japan",
+        "latitude": 30.4,
+        "longitude": 130.9
+      },
+      {
+        "name": "Guiana Space Centre",
+        "location": "French Guiana",
+        "latitude": 5.2,
+        "longitude": -52.8
+      },
+      {
+        "name": "Satish Dhawan Space Centre",
+        "location": "India",
+        "latitude": 13.7,
+        "longitude": 80.2
+      },
+      {
+        "name": "Plesetsk Cosmodrome",
+        "location": "Russia",
+        "latitude": 62.9,
+        "longitude": 40.3
+      },
+      {
+        "name": "Wallops Flight Facility",
+        "location": "Virginia, USA",
+        "latitude": 37.9,
+        "longitude": -75.5
+      },
+      {
+        "name": "Xichang Satellite Launch Center",
+        "location": "China",
+        "latitude": 28.2,
+        "longitude": 102.0
+      },
+      {
+        "name": "Svobodny Cosmodrome",
+        "location": "Russia",
+        "latitude": 51.4,
+        "longitude": 128.1
+      },
+      {
+        "name": "Alcântara Launch Center",
+        "location": "Brazil",
+        "latitude": -2.3,
+        "longitude": -44.4
+      },
+      {
+        "name": "Semnan Space Center",
+        "location": "Iran",
+        "latitude": 35.2,
+        "longitude": 53.9
+      },
+      {
+        "name": "Taiyuan Satellite Launch Center",
+        "location": "China",
+        "latitude": 37.1,
+        "longitude": 111.0
+      },
+      {
+        "name": "Kourou ELV",
+        "location": "French Guiana",
+        "latitude": 5.2,
+        "longitude": -52.8
+      }
+    ];
 
-// make-globe();
+    // Convert the array to the format expected by Globe.gl
+    const gData = rocketLaunchSites.map(site => ({
+      lat: site.latitude,
+      lng: site.longitude,
+      str: site.name,
+      size: Math.random() / 3,
+      color: ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)],
+    }));
+
+    // Create the globe visualization
+    Globe()
+      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
+      .pointsData(gData)
+      .pointAltitude('size')
+      .pointColor('color')
+      .pointLabel('str')
+      (document.getElementById('globe'))
