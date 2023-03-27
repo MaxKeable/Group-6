@@ -45,9 +45,20 @@ p {
     color: #DC5F00;
 }
 
-.time-to-launch p {
+.time-to-launch span {
     font-size: 2.5em;
     font-weight: 500;
+    color: #E9E8E8;
+    margin-left: 30px;
+}
+
+.launch-timer {
+    margin-left: 50px;
+}
+
+.launch-timer p {
+    font-size: 2em;
+    color: #E9E8E8;
 }
 
 .tile {
@@ -56,6 +67,7 @@ p {
     min-height: 150px;
     max-height: 200px;
     background-color: #20262E;
+    box-shadow: #DC5F00 0px 0px 10px;
 }
 
 .tile p {
@@ -89,12 +101,66 @@ p {
 }
 
 figure {
-    border: 5px solid #fff;
+    margin-top: 70px;
+    border: 10px solid #E9E8E8;
+}
+
+.nasa-img-h4 {
+    color: #E9E8E8;
+    margin-bottom: 100px;
+}
+
+.future-launch {
+    min-height: 300px;
+    background-color: #20262E;
+    /* this div will show on click event */
+}
+
+.future-launch h3 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 100px;
+    padding-top: 30px;
+    color: #E9E8E8;
+}
+
+.future-launch-button {
+    display: flex;
+    justify-content: center;
+    background-color: #20262E; 
+    /* this background colour will be added in on click event */
+}
+
+.future-launch-button button {
+    margin-top: 50px;
+    background-color: #DC5F00;
+    color: #E9E8E8;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: #DC5F00 0px 0px 20px;
+}
+
+.future-launch-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.future-launch-item {
+    margin: 20px 40px 20px 40px;
+}
+
+.future-launch-item h4 {
+    text-decoration: underline;
 }
 
 .mission-how {
     max-width: 400px;
     background-color: #20262E;
+    box-shadow: #DC5F00 0px 0px 10px;
 }
 
 .mission-how h3 {
