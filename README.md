@@ -28,8 +28,8 @@ Any additional information goes here
 
 ## Demo
 
-Link to the repository: https://github.com/MaxKeable/SpaceLink
-Link to the Demo Site: 
+- Link to the repository: https://github.com/MaxKeable/SpaceLink
+- Link to the Demo Site: 
 
 
 ## Documentation
