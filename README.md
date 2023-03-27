@@ -16,6 +16,10 @@ Any additional information goes here
 - [@ShibyMathew] (https://github.com/Shiby-Mathew)
 - [@connorMcNaught] (https://github.com/con118)
 
+## Features of The Web App
+
+- 
+
 ## Color Reference
 
 | Color             | Hex                                                                |
@@ -44,10 +48,42 @@ Any additional information goes here
 
 
 ## Marking criteria
-## Optimizations
+## Technical Acceptance Criteria: 25%
+- Satisfies the following code requirements:
+  - Application uses at least two server-side API's.
+  - Application uses client-side storage to store persistant data.
+  - Application doesn't use JS alerts, prompts, or confirms (uses modals instead).
+  - Application uses a CSS framework other than Bootstrap.
+  - Application is interactive (accepts and responds to user input).
 
-What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
+## Concept: 10%
+- Application should be a unique and novel idea.
+- Your group should clearly and concisely articulate your project idea.
 
+## Deployment: 20%
+- Application deployed at live URL and loads with no errors.
+- Application GitHub URL submitted.
+- Portfolio at live URL submitted, featuring project.
+
+## Repository Quality: 10%
+- Repository has a unique name.
+- Repository follows best practices for file structure and naming conventions.
+- Repository follows best practices for class/id-naming conventions, indentation, quality comments, etc.
+- Repository contains multiple descriptive commit messages.
+- Repository contains a quality README file with description, screenshot, and link to deployed application.
+
+## Application Quality: 15%
+- Application user experience is intuitive and easy to navigate.
+- Application user interface style is clean and polished.
+- Application is responsive.
+
+## Presentation: 10% 
+- Your group should present using Powerpoint or a similar presentation software.
+- Every group member should speak during the presentation.
+- Your presentation should follow the Project Presentation Template.
+
+## Collaboration: 10%
+- There are no major disparities in the number of GitHub contributions between group members.
 
 ## License
 
