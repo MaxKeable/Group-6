@@ -100,14 +100,6 @@ Any additional information goes here
 ## Collaboration: 10%
 - There are no major disparities in the number of GitHub contributions between group members.
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-
-## Badges
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 ## Acknowledgements/ Reference
 
  - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
@@ -127,3 +119,12 @@ Answer 1
 #### Question 2
 
 Answer 2
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Badges
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
