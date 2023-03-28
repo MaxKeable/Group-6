@@ -1,5 +1,5 @@
 
-# SpaceLink
+# SpaceLink Overview
 
 Our website serves as the ultimate SpaceX launch dashboard, providing you with the most up-to-date and
 comprehensive information about all things SpaceX. Our website delivers everything you need to know about SpaceX
@@ -14,11 +14,6 @@ comprehensive information about all things SpaceX. Our website delivers everythi
 launches, all in one place. Whether you're a space enthusiast or just curious about SpaceX's latest launches,
 our mission is to keep you informed and engaged with the latest happenings in the space industry. Join us on our
 journey to explore the unknown reaches of space with SpaceX.
-
-## Appendix
-
-Any additional information goes here
-
 
 ## Authors
 
@@ -116,15 +111,18 @@ Any additional information goes here
 
 Answer 1
 
-#### Question 2
+#### Why did we choose to use the Bulma CSS Frame Work
 
 Answer 2
 
-## License
+#### Why did we choose to add the globe.gl 
+
+Answer 3
+
+#### When was the 
+
+
+## Badges & License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-
-## Badges
-
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
