@@ -62,8 +62,8 @@ p {
 }
 
 .globe {
-    width(250);
-    height(150);
+    width: 400px;
+    height: 300px;
 }
 
 .tile {
