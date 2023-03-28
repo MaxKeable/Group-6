@@ -28,12 +28,14 @@ journey to explore the unknown reaches of space with SpaceX.
 
 ## Color Reference
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+| CSS Color Code | Example Color | Preview |
+| --- | --- | --- |
+| `color: #fff;` | `#fff` | ![#fff](https://via.placeholder.com/10/ffffff?text=+) |
+| `color: #E9E8E8;` | `#E9E8E8` | ![#E9E8E8](https://via.placeholder.com/10/E9E8E8?text=+) |
+| `color: #DC5F00;` | `#DC5F00` | ![#DC5F00](https://via.placeholder.com/10/DC5F00?text=+) |
+| `color: #EEEEEE;` | `#EEEEEE` | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) |
+| `background-color: #20262E;` | `#20262E` | ![#20262E](https://via.placeholder.com/10/20262E?text=+) |
+
 
 
 ## Demo
