@@ -41,8 +41,8 @@ journey to explore the unknown reaches of space with SpaceX.
 
 ## Demo
 
-- [Link to the repository](https://github.com/MaxKeable/SpaceLink)
-- [Link to the Demo Site] (https://maxkeable.github.io/SpaceLink/)
+- [Link To The Repository](https://github.com/MaxKeable/SpaceLink)
+- [Link To The Demo Site](https://maxkeable.github.io/SpaceLink/)
 
 ## Documentation
 
