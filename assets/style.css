@@ -48,27 +48,26 @@ p {
 }
 
 .launch-timer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-around;
-    margin-bottom: 110px;
-    margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  margin-bottom: 110px;
+  margin-top: 30px;
 }
 
 .timer-item {
-    display: flex;
-    align-items: center;
-    color: var(--main-text-color);
-    margin: 10px 20px 10px 20px;
-    font-size: 1.25em;
+  display: flex;
+  align-items: center;
+  color: var(--main-text-color);
+  margin: 10px 20px 10px 20px;
+  font-size: 1.25em;
 }
 
 .timer-item p {
-    font-weight: 600;
-    margin: 0 10px;
+  font-weight: 600;
+  margin: 0 10px;
 }
-
 
 .tile {
   min-width: 200px;
@@ -141,7 +140,6 @@ figure {
   margin: 20px 70px;
 }
 
-
 #save-launch {
   background-color: var(--main-color);
   color: var(--bg-color);
@@ -153,14 +151,13 @@ figure {
 }
 
 #saved-launch {
-    background-color: #DC5F00;
-    color: #20262E;
-    font-size: 1em; 
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-weight: 600;
-
+  background-color: #dc5f00;
+  color: #20262e;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 600;
 }
 
 .prev-button {
@@ -202,10 +199,6 @@ figure {
 }
 .hide {
   display: none;
-}
-
-.future-launch-item p {
-  color: #20262e;
 }
 
 .future-launch-items {
