@@ -173,7 +173,9 @@ figure {
 .hide {
   display: none;
 }
-
+.future-launch-item p {
+  color: #20262e;
+}
 
 .future-launch-items {
   display: flex;
