@@ -248,6 +248,7 @@ $("#close").on("click", function () {
 
 //Display local storage values in the modal
 function savedData() {
+  // Display modal
   $("#modal").attr("class", "is-active");
   var savedInfo = JSON.parse(localStorage.getItem("nextLaunchInfo"));
   if (savedInfo === null) {
