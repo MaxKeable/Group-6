@@ -23,9 +23,7 @@
   <nav class="navbar is-white">
     <div class="navbar-brand">
       <a href="" class="navbar-item">
-        <img
-          src="./img/SPACELINK.jpg"
-          class="logo is-size-6" alt="site logo" />
+        <img src="./img/SpaceLink.gif" class="logo is-size-6" alt="site logo" />
       </a>
       <a href="" class="navbar-burger" id="burger">
         <span></span>
@@ -41,28 +39,30 @@
     </div>
   </nav>
 
-  <div class="columns time-to-launch is-centered is-centered">
-    <div class="column is-6">
-      <h3 class="">Time to Launch:</h3>
+  <div class="time-to-launch">
+    <div class="time-to-launch">
+      <h3 class="">!!Time to Launch!!</h3>
     </div>
-    <div class="column is-3">
-      <div id="time-to-launch" class="">
-        <div id="timer" class="is-flex launch-timer">
+    <div id="time-to-launch" class="launch-timer">
+      <div id="timer" class="launch-timer">
+        <div class="timer-item">
           <span class="" id="days"></span>
           <p>days</p>
+        </div>
+        <div class="timer-item">
           <span class="" id="hours"></span>
           </p>hours</p>
+        </div>
+        <div class="timer-item">
           <span id="minutes"></span>
           </p>minutes</p>
+        </div>
+        <div class="timer-item">
           <span id="seconds"></span>
           </p>seconds</p>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="">
-    <p id="globe" class="globe"></p>
   </div>
 
 
@@ -123,6 +123,7 @@
     <div class="future-launch-button" id="future-launch-button">
       <button id="future-launch">Future Launches</button>
     </div>
+
     <div class="future-launch hide" id="launch-div">
       <h3>Future Launch Information:</h3>
       <div class="future-launch-items">
@@ -148,12 +149,12 @@
         </div>
       </div>
       <div class="next-prev-buttons">
-          <button class="prev-button">Prev</button>
-          <button class="next-button">Next</button>
+        <button class="prev-button">Prev</button>
+        <button id="save-launch">Saved Launches</button>
+        <button class="next-button">Next</button>
       </div>
     </div>
   </section>
-
 
   
   <section>
@@ -191,7 +192,11 @@
             </div>
           </div>
           </section>
-  
+
+  <div id="globe-style">
+    <p id="globe"></p>
+  </div>
+
 
   <section class="">
     <div class="columns is-centered">
@@ -203,9 +208,12 @@
     </div>
     <h4 class="has-text-right is-uppercase mt-2 mr-4 nasa-img-h4">
       NASA's space image of the day
-      </h4>
+    </h4>
+
+
+
   </section>
-  <section class="columns is-8 mx-4 my-6 is-centered">
+  <section class="info-section">
     <div id="our-mission" class="column box mx-4 mission-how is-centered">
       <h3>Our Mission:</h3>
       <p>Our website serves as the ultimate SpaceX launch dashboard, providing you with the most up-to-date and
