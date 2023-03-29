@@ -1,143 +1,140 @@
-
 body {
-    font-family: 'Roboto Mono', monospace;
-    background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80');
+  font-family: "Roboto Mono", monospace;
+  background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
 }
 
 .navbar a {
-    margin-right: 30px;
+  margin-right: 30px;
 }
-  
 
 .logo {
-    min-height: 60px;
-    margin-left: 20px;
+  min-height: 60px;
+  margin-left: 20px;
 }
 
 h2 {
-    font-size: 2em;
-    font-weight: 700;
+  font-size: 2em;
+  font-weight: 700;
 }
 
 h3 {
-    font-size: 1.5em;
-    font-weight: 500;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 h4 {
-    font-size: 1.2em;
-    color: #fff;
+  font-size: 1.2em;
+  color: #fff;
 }
 
 p {
-    font-size: 1.2em;
-    color: #E9E8E8;
+  font-size: 1.2em;
+  color: #e9e8e8;
 }
 
 .time-to-launch {
-    margin-top: 100px;
-    min-height: 200px;
+  margin-top: 100px;
+  min-height: 200px;
 }
 
 .time-to-launch h3 {
-    font-size: 4em;
-    margin-left: 100px;
-    color: #DC5F00;
+  font-size: 4em;
+  margin-left: 100px;
+  color: #dc5f00;
 }
 
 .time-to-launch span {
-    font-size: 2.5em;
-    font-weight: 500;
-    color: #E9E8E8;
-    margin-left: 30px;
+  font-size: 2.5em;
+  font-weight: 500;
+  color: #e9e8e8;
+  margin-left: 30px;
 }
 
 .launch-timer {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .launch-timer p {
-    font-size: 2em;
-    color: #E9E8E8;
+  font-size: 2em;
+  color: #e9e8e8;
 }
 
-canvas[style="display: block; touch-action: none; width: 1512px; height: 865px;"] {
-    /* your CSS styles here */
-    width: 600px;
-    height: 300px;
-  }
-  
-  
+
+.globe {
+  width: 400px;
+  height: 300px;
+}
+
 
 .tile {
-    min-width: 200px;
-    max-width: 200px;
-    min-height: 150px;
-    max-height: 200px;
-    background-color: #20262E;
-    box-shadow: #DC5F00 0px 0px 10px;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 150px;
+  max-height: 200px;
+  background-color: #20262e;
+  box-shadow: #dc5f00 0px 0px 10px;
 }
 
 .tile p {
-    margin-top: 10px;
-    font-size: 1.25em;
+  margin-top: 10px;
+  font-size: 1.25em;
 }
 
 .tile h3 {
-    color: #DC5F00;
-    font-size: 1.5em;
+  color: #dc5f00;
+  font-size: 1.5em;
 }
 
 .weather {
-    background-color: #DC5F00;
-    min-height: 350px;
+  background-color: #dc5f00;
+  min-height: 350px;
 }
 
 .weather h2 {
-    margin-top: 20px;
-    min-width: 200px;
-    font-size: 2.5em;
+  margin-top: 20px;
+  min-width: 200px;
+  font-size: 2.5em;
 }
 
 .weather h3 {
-    margin-top: 80px;
-    font-size: 2em;
+  margin-top: 80px;
+  font-size: 2em;
 }
 
 .weather p {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 figure {
-    margin-top: 70px;
-    border: 10px solid #E9E8E8;
+  margin-top: 70px;
+  border: 10px solid #e9e8e8;
 }
 
 .nasa-img-h4 {
-    color: #E9E8E8;
-    margin-bottom: 100px;
+  color: #e9e8e8;
+  margin-bottom: 100px;
 }
 
 .future-launch {
-    min-height: 300px;
-    background-color: #20262E;
-    /* this div will show on click event */
+  min-height: 300px;
+  background-color: #20262e;
+  /* this div will show on click event */
 }
 
 .future-launch h3 {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 50px;
-    padding-top: 30px;
-    color: #E9E8E8;
-    font-size: 2em;
-    font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+  padding-top: 30px;
+  color: #e9e8e8;
+  font-size: 2em;
+  font-weight: 700;
 }
 
 .next-prev-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 70px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 70px;
 }
 
 #save-launch {
@@ -171,37 +168,41 @@ figure {
 }
 
 .future-launch-button {
-    display: flex;
-    justify-content: center;
-    background-color: #20262E; 
-    /* this background colour will be added in on click event */
+  display: flex;
+  justify-content: center;
+  /*background-color: #20262e;*/
+  /* this background colour will be added in on click event */
 }
 
 .future-launch-button button {
-    margin-top: 50px;
-    background-color: #DC5F00;
-    color: #E9E8E8;
-    font-size: 1.5em;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    box-shadow: #DC5F00 0px 0px 20px;
+  margin-top: 50px;
+  background-color: #dc5f00;
+  color: #e9e8e8;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: #dc5f00 0px 0px 20px;
+}
+.hide {
+  display: none;
 }
 
+
 .future-launch-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
 .future-launch-item {
-    margin: 20px 40px 20px 40px;
+  margin: 20px 40px 20px 40px;
 }
 
 .future-launch-item h4 {
-    text-decoration: underline;
-    font-size: 1.5em;
+  text-decoration: underline;
+  font-size: 1.5em;
 }
 
 
@@ -220,39 +221,35 @@ figure {
 }
 
 .mission-how h3 {
-    margin: 15px 0;
-    color: #DC5F00;
-    font-size: 2em;
+  margin: 15px 0;
+  color: #dc5f00;
+  font-size: 2em;
 }
 
 .mission-how p {
-    font-size: 1.25em;
+  font-size: 1.25em;
 }
 
 .footer {
-    background-color: #20262E;
+  background-color: #20262e;
 }
 
 .title {
-    color: #DC5F00;
+  color: #dc5f00;
 }
 
-
 .contact a {
-    color: #EEEEEE;
+  color: #eeeeee;
 }
 
 .line {
-    min-width: 500px;
-    max-width: 900px;
-    min-height: 2px;
-    background-color: #DC5F00
-    ;
-    margin: 20px auto; 
+  min-width: 500px;
+  max-width: 900px;
+  min-height: 2px;
+  background-color: #dc5f00;
+  margin: 20px auto;
 }
 
-
 @media (max-width: 767px) {
-    /* styles to apply when screen width is 767px or smaller */
-  }
-  
+  /* styles to apply when screen width is 767px or smaller */
+}

@@ -87,18 +87,44 @@ function nextLaunchData() {
     .catch(function (error) {
       alert("Unable to connect to API");
     });
+
+  $("#launch-div").css("display", "block");
+
+  $("#future-launch-button").css("background-color", "#20262e");
 }
 //Display Data on the Dashboard
 
 function displayData(data) {
   var dailyResult = data.result[0];
+
+  //Current launch Information
   //checking if value is null
   if (dailyResult.vehicle.name === null) {
     rocketName.text("Data not returned");
+  } else {
+    rocketName.text(dailyResult.vehicle.name);
   }
   if (dailyResult.pad.location.country === null) {
     locationName.text("Data not returned");
+  } else {
+    locationName.text(dailyResult.pad.location.country);
   }
+  if (dailyResult.pad.location.name === null) {
+    padName.text("Data not returned");
+  } else {
+    padName.text(dailyResult.pad.location.name);
+  }
+  if (dailyResult.missions[0].name === null) {
+    missionName.text("Data not returned");
+  } else {
+    missionName.text(dailyResult.missions[0].name);
+  }
+  if (dailyResult.provider.name === null) {
+    providerName.text("Data not returned");
+  } else {
+    providerName.text(dailyResult.provider.name);
+  }
+
   // if next rocket launch time is not available, timer context will display "Data not returned"
   if (dailyResult.win_open == null) {
     timer.text("Data not returned");
@@ -109,16 +135,22 @@ function displayData(data) {
     }, 1000);
   }
 
-  //Current launch Information
-  locationName.text(dailyResult.pad.location.country);
-  rocketName.text(dailyResult.vehicle.name);
-  padName.text(dailyResult.pad.location.name);
-  missionName.text(dailyResult.missions[0].name);
-  providerName.text(dailyResult.provider.name);
   //Weather Information
-  temperature.text(dailyResult.weather_temp);
-  weatherCondition.text(dailyResult.weather_condition);
-  windSpeed.text(`${dailyResult.weather_wind_mph} mph`);
+  if (dailyResult.weather_temp === null) {
+    temperature.text("Data not returned");
+  } else {
+    temperature.text(dailyResult.weather_temp);
+  }
+  if (dailyResult.weather_condition === null) {
+    weatherCondition.text("Data not returned");
+  } else {
+    weatherCondition.text(dailyResult.weather_condition);
+  }
+  if (dailyResult.weather_wind_mph === null) {
+    windSpeed.text("Data not returned");
+  } else {
+    windSpeed.text(`${dailyResult.weather_wind_mph} mph`);
+  }
 
   launchDescription.text(
     `Launch Description : ${dailyResult.launch_description}`
@@ -132,17 +164,39 @@ function displayNextLaunch(data, indexNumber) {
 
   // Storing in  variables
   var locationCountry = resultArray.pad.location.country;
-  var missionName = resultArray.missions[0].name;
-  var vechicleName = resultArray.vehicle.name;
-  var padName = resultArray.pad.location.name;
-  var dateTime = resultArray.t0;
+  if (locationCountry === null) {
+    futureMissionLocation.text("Data not returned");
+  } else {
+    futureMissionLocation.text(locationCountry);
+  }
 
-  //Displaying values in the HTML page
-  futureMissionLocation.text(locationCountry);
-  futureMissionName.text(missionName);
-  futureRocketName.text(vechicleName);
-  futureLaunchPad.text(padName);
-  futureLaunchTime.text(dateTime);
+  var missionName = resultArray.missions[0].name;
+  if (missionName === null) {
+    futureMissionName.text("Data not returned");
+  } else {
+    futureMissionName.text(missionName);
+  }
+
+  var vechicleName = resultArray.vehicle.name;
+  if (vechicleName === null) {
+    futureRocketName.text("Data not returned");
+  } else {
+    futureRocketName.text(vechicleName);
+  }
+
+  var padName = resultArray.pad.location.name;
+  if (padName === null) {
+    futureLaunchPad.text("Data not returned");
+  } else {
+    futureLaunchPad.text(padName);
+  }
+
+  var dateTime = resultArray.t0;
+  if (dateTime === null) {
+    futureLaunchTime.text("Data not returned");
+  } else {
+    futureLaunchTime.text(dateTime);
+  }
 
   //Create an object to stringify and in the local storage
   var nextLaunchInfo = {
