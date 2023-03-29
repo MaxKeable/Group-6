@@ -199,7 +199,7 @@ function displayNextLaunch(data, indexNumber) {
     futureLaunchTime.text(dateTime);
   }
 
-  //Create an object to stringify and in the local storage
+  //Create an object to stringify and store in the local storage
   var nextLaunchInfo = {
     missionLocation: locationCountry,
     rocketName: vechicleName,
@@ -211,7 +211,7 @@ function displayNextLaunch(data, indexNumber) {
   localStorage.setItem("nextLaunchInfo", JSON.stringify(nextLaunchInfo));
 }
 
-//Click event triggered by next launch button
+//Button click event for future launch
 futureLaunchButton.on("click", nextLaunchData);
 
 // countdown timer between next launch time and current time

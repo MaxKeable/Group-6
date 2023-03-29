@@ -33,32 +33,31 @@ p {
 }
 
 .time-to-launch {
-    text-align: center;
-    margin-top: 70px;
-    font-size: 2em;
-    color: #dc5f00;
+  text-align: center;
+  margin-top: 70px;
+  font-size: 2em;
+  color: #dc5f00;
 }
 
 .launch-timer {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    margin-bottom: 110px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 110px;
 }
 
 .timer-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    color: #e9e8e8;
-    margin: 10px 30px 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: #e9e8e8;
+  margin: 10px 30px 10px 30px;
 }
 .timer-item p {
-    margin-left: 10px;
+  margin-left: 10px;
 }
-
 
 .tile {
   min-width: 200px;
@@ -132,33 +131,33 @@ figure {
 }
 
 #save-launch {
-    background-color: #DC5F00;
-    color: #20262E;
-    font-size: 1em; 
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-weight: 600;
+  background-color: #dc5f00;
+  color: #20262e;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 600;
 }
 
 .prev-button {
-    background-color: #DC5F00;
-    border: #DC5F00 1px solid;
-    color: #20262E;
-    padding: 7px 13px;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: 600;
+  background-color: #dc5f00;
+  border: #dc5f00 1px solid;
+  color: #20262e;
+  padding: 7px 13px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
 }
 
 .next-button {
-    background-color: #DC5F00;
-    border: #DC5F00 1px solid;
-    color: #20262E; 
-    padding: 7px 13px;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: 600;
+  background-color: #dc5f00;
+  border: #dc5f00 1px solid;
+  color: #20262e;
+  padding: 7px 13px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
 }
 
 .future-launch-button {
@@ -182,7 +181,8 @@ figure {
   display: none;
 }
 .future-launch-item p {
-  color: #20262e;
+  /*color: #20262e;*/
+  color: var(--bg-color);
 }
 
 .future-launch-items {
@@ -201,19 +201,18 @@ figure {
   font-size: 1.5em;
 }
 
-
 .info-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 200px;
 }
 
 .mission-how {
-    background-color: #20262E;
-    box-shadow: #DC5F00 0px 0px 10px;
-    max-width: 600px;
-    min-width: 400px;
+  background-color: #20262e;
+  box-shadow: #dc5f00 0px 0px 10px;
+  max-width: 600px;
+  min-width: 400px;
 }
 
 .mission-how h3 {
