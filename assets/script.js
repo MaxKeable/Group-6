@@ -87,6 +87,10 @@ function nextLaunchData() {
     .catch(function (error) {
       alert("Unable to connect to API");
     });
+
+  $("#launch-div").css("display", "block");
+
+  $("#future-launch-button").css("background-color", "#20262e");
 }
 //Display Data on the Dashboard
 
