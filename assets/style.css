@@ -61,13 +61,12 @@ p {
     color: #E9E8E8;
 }
 
-canvas[style="display: block; touch-action: none; width: 1512px; height: 865px;"] {
-    /* your CSS styles here */
-    width: 600px;
+
+.globe {
+    width: 400px;
     height: 300px;
-  }
-  
-  
+}
+
 
 .tile {
     min-width: 200px;

@@ -1,5 +1,5 @@
 
-# SpaceLink
+# SpaceLink Overview
 
 Our website serves as the ultimate SpaceX launch dashboard, providing you with the most up-to-date and
 comprehensive information about all things SpaceX. Our website delivers everything you need to know about SpaceX
@@ -15,11 +15,6 @@ launches, all in one place. Whether you're a space enthusiast or just curious ab
 our mission is to keep you informed and engaged with the latest happenings in the space industry. Join us on our
 journey to explore the unknown reaches of space with SpaceX.
 
-## Appendix
-
-Any additional information goes here
-
-
 ## Authors
 
 - [@DonglanChen] (https://github.com/Chenson92)
@@ -29,16 +24,22 @@ Any additional information goes here
 
 ## Features of The Web App
 
-- 
+- A globe that you can scroll around and find launch locations 
+- Using local storage to save your last launch 
+- A beautifully designed Web App that is easy to understand
+- Get updated on the latest an future launches
+- Get a countdown timer till the next launch 
 
 ## Color Reference
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+| CSS Color Code | Example Color | Preview |
+| --- | --- | --- |
+| `color: #fff;` | `#fff` | ![#fff](https://via.placeholder.com/10/ffffff?text=+) |
+| `color: #E9E8E8;` | `#E9E8E8` | ![#E9E8E8](https://via.placeholder.com/10/E9E8E8?text=+) |
+| `color: #DC5F00;` | `#DC5F00` | ![#DC5F00](https://via.placeholder.com/10/DC5F00?text=+) |
+| `color: #EEEEEE;` | `#EEEEEE` | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) |
+| `background-color: #20262E;` | `#20262E` | ![#20262E](https://via.placeholder.com/10/20262E?text=+) |
+
 
 
 ## Demo
@@ -46,14 +47,10 @@ Any additional information goes here
 - Link to the repository: https://github.com/MaxKeable/SpaceLink
 - Link to the Demo Site: 
 
-## API Reference
-
-
-
-
 ## Documentation
 
 [Powerpoint-doc](https://addlinkher.com)
+[Google-Doc](https://docs.google.com/document/d/1HqK1E2jR9fd4uKlJZn3hGP68nIQuFSlsn2WURuq9L0U/edit?usp=sharing)
 
 
 ## Screenshots
@@ -62,8 +59,9 @@ Any additional information goes here
 * Insert
 
 
-## Marking criteria
+# Marking criteria
 ## Technical Acceptance Criteria: 25%
+
 - Satisfies the following code requirements:
   - Application uses at least two server-side API's.
   - Application uses client-side storage to store persistant data.
@@ -72,15 +70,18 @@ Any additional information goes here
   - Application is interactive (accepts and responds to user input).
 
 ## Concept: 10%
+
 - Application should be a unique and novel idea.
 - Your group should clearly and concisely articulate your project idea.
 
 ## Deployment: 20%
+
 - Application deployed at live URL and loads with no errors.
 - Application GitHub URL submitted.
 - Portfolio at live URL submitted, featuring project.
 
 ## Repository Quality: 10%
+
 - Repository has a unique name.
 - Repository follows best practices for file structure and naming conventions.
 - Repository follows best practices for class/id-naming conventions, indentation, quality comments, etc.
@@ -88,6 +89,7 @@ Any additional information goes here
 - Repository contains a quality README file with description, screenshot, and link to deployed application.
 
 ## Application Quality: 15%
+
 - Application user experience is intuitive and easy to navigate.
 - Application user interface style is clean and polished.
 - Application is responsive.
@@ -98,6 +100,7 @@ Any additional information goes here
 - Your presentation should follow the Project Presentation Template.
 
 ## Collaboration: 10%
+
 - There are no major disparities in the number of GitHub contributions between group members.
 
 ## Acknowledgements/ Reference
@@ -114,17 +117,31 @@ Any additional information goes here
 
 #### Why did we choose to base our project around rockets
 
-Answer 1
+Rockets are an integral part of space exploration, and some people may be passionate about exploring the cosmos and **SpaceLink** enables that.
 
-#### Question 2
+#### Why did we choose to use the Bulma CSS Frame Work
 
 Answer 2
 
-## License
+#### Why did we choose to add the globe.gl 
+
+The globe.gl library was added to the project to provide an interactive and visually engaging way to display information about SpaceX launches. It allows users to see where the launches are taking place and get a better sense of the global impact of space exploration.
+
+#### What were the Api's that we used
+
+- NASA's photo of the day
+- Globe.gl 
+- SpaceX API
+
+#### How is the project interactive 
+
+The project is interactive in that it accepts and responds to user input. Users can browse through information about SpaceX launches, filter launches by various criteria, and view launch details. The website also uses modals instead of JS alerts, prompts, or confirms, which provides a smoother and more visually appealing user experience. 
+
+#### What is the concept of the project
+
+The concept of the project is to provide a comprehensive and up-to-date resource for information about SpaceX launches. It aims to be a one-stop-shop for anyone interested in following SpaceX's latest launches, providing a range of features and interactive tools to help users stay informed and engaged with the space industry.
+
+## Badges & License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-
-## Badges
-
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
