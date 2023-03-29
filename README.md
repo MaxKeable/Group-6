@@ -52,9 +52,7 @@ journey to explore the unknown reaches of space with SpaceX.
 
 ## Screenshots
 
-![insewrt app App Screenshot here](./img/Screen Shot 2023-03-30 at 9.38.38 am.png)
-
-- Insert
+[Project Screenshot](https://ibb.co/gTdMhFN))
 
 # Marking criteria
 
