@@ -33,36 +33,30 @@ p {
 }
 
 .time-to-launch {
-  margin-top: 100px;
-  min-height: 200px;
-}
-
-.time-to-launch h3 {
-  font-size: 4em;
-  margin-left: 100px;
-  color: #dc5f00;
-}
-
-.time-to-launch span {
-  font-size: 2.5em;
-  font-weight: 500;
-  color: #e9e8e8;
-  margin-left: 30px;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 2em;
+    color: #dc5f00;
 }
 
 .launch-timer {
-  margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 110px;
 }
 
-.launch-timer p {
-  font-size: 2em;
-  color: #e9e8e8;
+.timer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #e9e8e8;
+    margin: 10px 30px 10px 30px;
 }
-
-
-.globe {
-  width: 400px;
-  height: 300px;
+.timer-item p {
+    margin-left: 10px;
 }
 
 
