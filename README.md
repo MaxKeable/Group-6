@@ -105,9 +105,9 @@ journey to explore the unknown reaches of space with SpaceX.
 - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
 - [Awesome README](https://github.com/matiassingers/awesome-readme)
 - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-- [Globe.gl Documentation] (https://globe.gl/)
-- [Bulma Documentation] (https://bulma.io/documentation/)
-- [Markdown License Badge] (https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
+- [Globe.gl Documentation](https://globe.gl/)
+- [Bulma Documentation](https://bulma.io/documentation/)
+- [Markdown License Badge](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
 ## FAQ
 
