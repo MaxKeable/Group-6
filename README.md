@@ -139,5 +139,5 @@ The concept of the project is to provide a comprehensive and up-to-date resource
 
 ## Badges & License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT Lisense](https://choosealicense.com/licenses/mit/)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
