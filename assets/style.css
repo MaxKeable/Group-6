@@ -1,3 +1,10 @@
+:root {
+  --font-color: #fff;
+  --main-text-color: #e9e8e8;
+  --main-color: #dc5f00;
+  --bg-color: #20262e;
+}
+
 body {
   font-family: "Roboto Mono", monospace;
   background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
@@ -24,15 +31,30 @@ h3 {
 
 h4 {
   font-size: 1.2em;
-  color: #fff;
+  color: var(--font-color);
 }
 
 p {
   font-size: 1.2em;
-  color: #e9e8e8;
+  color: var(--main-text-color);
 }
 
 .time-to-launch {
+  margin-top: 100px;
+  min-height: 200px;
+}
+
+.time-to-launch h3 {
+  font-size: 4em;
+  margin-left: 100px;
+  color: var(--main-color);
+}
+
+.time-to-launch span {
+  font-size: 2.5em;
+  font-weight: 500;
+  color: var(--main-text-color);
+  margin-left: 30px;
     text-align: center;
     margin-top: 70px;
     font-size: 2em;
@@ -47,6 +69,15 @@ p {
     margin-bottom: 110px;
 }
 
+.launch-timer p {
+  font-size: 2em;
+  color: var(--main-text-color);
+}
+
+.globe {
+  width: 400px;
+  height: 300px;
+
 .timer-item {
     display: flex;
     justify-content: center;
@@ -59,14 +90,13 @@ p {
     margin-left: 10px;
 }
 
-
 .tile {
   min-width: 200px;
   max-width: 200px;
   min-height: 150px;
   max-height: 200px;
-  background-color: #20262e;
-  box-shadow: #dc5f00 0px 0px 10px;
+  background-color: var(--bg-color);
+  box-shadow: var(--main-color) 0px 0px 10px;
 }
 
 .tile p {
@@ -75,12 +105,12 @@ p {
 }
 
 .tile h3 {
-  color: #dc5f00;
+  color: var(--main-color);
   font-size: 1.5em;
 }
 
 .weather {
-  background-color: #dc5f00;
+  background-color: var(--main-color);
   min-height: 350px;
 }
 
@@ -101,17 +131,17 @@ p {
 
 figure {
   margin-top: 70px;
-  border: 10px solid #e9e8e8;
+  border: 10px solid var(--main-text-color);
 }
 
 .nasa-img-h4 {
-  color: #e9e8e8;
+  color: var(--main-text-color);
   margin-bottom: 100px;
 }
 
 .future-launch {
   min-height: 300px;
-  background-color: #20262e;
+  background-color: var(--bg-color);
   /* this div will show on click event */
 }
 
@@ -120,7 +150,7 @@ figure {
   justify-content: flex-start;
   margin-left: 50px;
   padding-top: 30px;
-  color: #e9e8e8;
+  color: var(--main-text-color);
   font-size: 2em;
   font-weight: 700;
 }
@@ -131,6 +161,16 @@ figure {
   margin: 20px 70px;
 }
 
+
+#save-launch {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 600;
+  
 #saved-launch {
     background-color: #DC5F00;
     color: #20262E;
@@ -139,26 +179,27 @@ figure {
     border-radius: 5px;
     padding: 10px 20px;
     font-weight: 600;
+
 }
 
 .prev-button {
-    background-color: #DC5F00;
-    border: #DC5F00 1px solid;
-    color: #20262E;
-    padding: 7px 13px;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: 600;
+  background-color: var(--main-color);
+  border: var(--main-color) 1px solid;
+  color: var(--bg-color);
+  padding: 7px 13px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
 }
 
 .next-button {
-    background-color: #DC5F00;
-    border: #DC5F00 1px solid;
-    color: #20262E; 
-    padding: 7px 13px;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: 600;
+  background-color: var(--main-color);
+  border: var(--main-color) 1px solid;
+  color: var(--bg-color);
+  padding: 7px 13px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
 }
 
 .future-launch-button {
@@ -170,17 +211,18 @@ figure {
 
 .future-launch-button button {
   margin-top: 50px;
-  background-color: #dc5f00;
-  color: #e9e8e8;
+  background-color: var(--main-color);
+  color: var(--main-text-color);
   font-size: 1.5em;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
-  box-shadow: #dc5f00 0px 0px 20px;
+  box-shadow: var(--main-color) 0px 0px 20px;
 }
 .hide {
   display: none;
 }
+
 .future-launch-item p {
   color: #20262e;
 }
@@ -201,24 +243,23 @@ figure {
   font-size: 1.5em;
 }
 
-
 .info-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 200px;
 }
 
 .mission-how {
-    background-color: #20262E;
-    box-shadow: #DC5F00 0px 0px 10px;
-    max-width: 600px;
-    min-width: 400px;
+  background-color: var(--bg-color);
+  box-shadow: var(--main-color) 0px 0px 10px;
+  max-width: 600px;
+  min-width: 400px;
 }
 
 .mission-how h3 {
   margin: 15px 0;
-  color: #dc5f00;
+  color: var(--main-color);
   font-size: 2em;
 }
 
@@ -227,11 +268,11 @@ figure {
 }
 
 .footer {
-  background-color: #20262e;
+  background-color: var(--bg-color);
 }
 
 .title {
-  color: #dc5f00;
+  color: var(--main-color);
 }
 
 .contact a {
@@ -242,7 +283,7 @@ figure {
   min-width: 500px;
   max-width: 900px;
   min-height: 2px;
-  background-color: #dc5f00;
+  background-color: var(--main-color);
   margin: 20px auto;
 }
 
