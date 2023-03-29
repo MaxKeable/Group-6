@@ -137,22 +137,34 @@ figure {
   margin: 20px 70px;
 }
 
+#save-launch {
+    background-color: #DC5F00;
+    color: #20262E;
+    font-size: 1em; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
 .prev-button {
-  background-color: #dc5f00;
-  border: #dc5f00 1px solid;
-  padding: 7px 13px;
-  border-radius: 5px;
-  font-size: 1em;
-  font-weight: 600;
+    background-color: #DC5F00;
+    border: #DC5F00 1px solid;
+    color: #20262E;
+    padding: 7px 13px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 .next-button {
-  background-color: #dc5f00;
-  border: #dc5f00 1px solid;
-  padding: 7px 13px;
-  border-radius: 5px;
-  font-size: 1em;
-  font-weight: 600;
+    background-color: #DC5F00;
+    border: #DC5F00 1px solid;
+    color: #20262E; 
+    padding: 7px 13px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 .future-launch-button {
