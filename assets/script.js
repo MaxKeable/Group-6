@@ -88,6 +88,7 @@ function nextLaunchData() {
       alert("Unable to connect to API");
     });
 
+  //Show the div and change css
   $("#launch-div").css("display", "block");
 
   $("#future-launch-button").css("background-color", "#20262e");
@@ -237,6 +238,37 @@ function timeBetweenDates(launchTime) {
   }
 }
 getNasaImg();
+
+//Showing saved launches in the modal(from localStorage)
+
+$("#saved-launch").on("click", savedData);
+$("#close").on("click", function () {
+  $("#modal").css("display", "none");
+});
+
+//Display local storage values in the modal
+function savedData() {
+  // Display modal
+  $("#modal").attr("class", "is-active");
+  var savedInfo = JSON.parse(localStorage.getItem("nextLaunchInfo"));
+  if (savedInfo === null) {
+    $("#saved-mission-location").text("Location :No saved data");
+    $("#saved-mission-name").text("Mission Name :No saved data");
+    $("#saved-rocket-name").text("Rocket Name : No saved data");
+    $("#saved-launch-pad").text("Launch Pad Name : No saved data");
+    $("#saved-launch-time").text("Launch Time : No saved data");
+  } else {
+    $("#saved-mission-location").text(
+      `Location : ${savedInfo.missionLocation}`
+    );
+    $("#saved-mission-name").text(
+      `Mission Name : ${savedInfo.nextMissionName}`
+    );
+    $("#saved-rocket-name").text(`Rocket Name : ${savedInfo.rocketName}`);
+    $("#saved-launch-pad").text(`Launch Pad Name : ${savedInfo.launchPadName}`);
+    $("#saved-launch-time").text(`Launch Time : ${savedInfo.launchTime}`);
+  }
+}
 
 const rocketLaunchSites = [
   {

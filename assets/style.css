@@ -55,10 +55,18 @@ p {
   font-weight: 500;
   color: var(--main-text-color);
   margin-left: 30px;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 2em;
+    color: #dc5f00;
 }
 
 .launch-timer {
-  margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 110px;
 }
 
 .launch-timer p {
@@ -69,6 +77,17 @@ p {
 .globe {
   width: 400px;
   height: 300px;
+
+.timer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #e9e8e8;
+    margin: 10px 30px 10px 30px;
+}
+.timer-item p {
+    margin-left: 10px;
 }
 
 .tile {
@@ -142,6 +161,7 @@ figure {
   margin: 20px 70px;
 }
 
+
 #save-launch {
   background-color: var(--main-color);
   color: var(--bg-color);
@@ -150,6 +170,16 @@ figure {
   border-radius: 5px;
   padding: 10px 20px;
   font-weight: 600;
+  
+#saved-launch {
+    background-color: #DC5F00;
+    color: #20262E;
+    font-size: 1em; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 600;
+
 }
 
 .prev-button {
@@ -191,6 +221,10 @@ figure {
 }
 .hide {
   display: none;
+}
+
+.future-launch-item p {
+  color: #20262e;
 }
 
 .future-launch-items {

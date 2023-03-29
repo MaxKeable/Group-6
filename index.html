@@ -23,9 +23,7 @@
   <nav class="navbar is-white">
     <div class="navbar-brand">
       <a href="" class="navbar-item">
-        <img
-          src="./img/SpaceLink.gif"
-          class="logo is-size-6" alt="site logo" />
+        <img src="./img/SpaceLink.gif" class="logo is-size-6" alt="site logo" />
       </a>
       <a href="" class="navbar-burger" id="burger">
         <span></span>
@@ -41,19 +39,25 @@
     </div>
   </nav>
 
-  <div class="columns time-to-launch is-centered is-centered">
-    <div class="column is-6">
-      <h3 class="">Time to Launch:</h3>
+  <div class="time-to-launch">
+    <div class="time-to-launch">
+      <h3 class="">!!Time to Launch!!</h3>
     </div>
-    <div class="column is-3">
-      <div id="time-to-launch" class="">
-        <div id="timer" class="is-flex launch-timer">
+    <div id="time-to-launch" class="launch-timer">
+      <div id="timer" class="launch-timer">
+        <div class="timer-item">
           <span class="" id="days"></span>
           <p>days</p>
+        </div>
+        <div class="timer-item">
           <span class="" id="hours"></span>
           </p>hours</p>
+        </div>
+        <div class="timer-item">
           <span id="minutes"></span>
           </p>minutes</p>
+        </div>
+        <div class="timer-item">
           <span id="seconds"></span>
           </p>seconds</p>
         </div>
@@ -145,16 +149,49 @@
         </div>
       </div>
       <div class="next-prev-buttons">
-          <button class="prev-button">Prev</button>
-          <button id="save-launch">Saved Launches</button>
-          <button class="next-button">Next</button>
+        <button class="prev-button">Prev</button>
+        <button id="saved-launch">Saved Launches</button>
+        <button class="next-button">Next</button>
       </div>
     </div>
   </section>
-  
+
+
+      <div class="modal" id="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Saved Launch Details</p>
+            <button class="delete" id="close" aria-label="close"></button>
+          </header>
+
+          <section class="modal-card-body">
+              <div class="has-text-dark">    
+                <div class="future-launch-item">                  
+                  <p id="saved-mission-location">Mission Location</p>
+                </div>
+                <div class="future-launch-item">                    
+                  <p id="saved-mission-name">Mission Name</p>
+                </div>
+                <div class="future-launch-item">                    
+                  <p id="saved-rocket-name">Rocket Name</p>
+                </div>
+                <div class="future-launch-item">
+                  <p id="saved-launch-pad">Launch Pad Name</p>
+                </div>
+                <div class="future-launch-item">                   
+                  <p id="saved-launch-time">Launch Time</p>
+                </div>
+              </div>
+            </section>                
+            </div>
+          </div>
+          </section>
+
   <div id="globe-style">
     <p id="globe"></p>
   </div>
+
 
   <section class="">
     <div class="columns is-centered">
@@ -166,10 +203,10 @@
     </div>
     <h4 class="has-text-right is-uppercase mt-2 mr-4 nasa-img-h4">
       NASA's space image of the day
-      </h4>
+    </h4>
 
 
-      
+
   </section>
   <section class="info-section">
     <div id="our-mission" class="column box mx-4 mission-how is-centered">
