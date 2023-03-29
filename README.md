@@ -1,4 +1,3 @@
-
 # SpaceLink Overview
 
 Our website serves as the ultimate SpaceX launch dashboard, providing you with the most up-to-date and
@@ -24,42 +23,40 @@ journey to explore the unknown reaches of space with SpaceX.
 
 ## Features of The Web App
 
-- A globe that you can scroll around and find launch locations 
-- Using local storage to save your last launch 
+- A globe that you can scroll around and find launch locations
+- Using local storage to save your last launch
 - A beautifully designed Web App that is easy to understand
 - Get updated on the latest an future launches
-- Get a countdown timer till the next launch 
+- Get a countdown timer till the next launch
 
 ## Color Reference
 
-| CSS Color Code | Example Color | Preview |
-| --- | --- | --- |
-| `color: #fff;` | `#fff` | ![#fff](https://via.placeholder.com/10/ffffff?text=+) |
-| `color: #E9E8E8;` | `#E9E8E8` | ![#E9E8E8](https://via.placeholder.com/10/E9E8E8?text=+) |
-| `color: #DC5F00;` | `#DC5F00` | ![#DC5F00](https://via.placeholder.com/10/DC5F00?text=+) |
-| `color: #EEEEEE;` | `#EEEEEE` | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) |
-| `background-color: #20262E;` | `#20262E` | ![#20262E](https://via.placeholder.com/10/20262E?text=+) |
-
-
+| CSS Color Code               | Example Color | Preview                                                  |
+| ---------------------------- | ------------- | -------------------------------------------------------- |
+| `color: #fff;`               | `#fff`        | ![#fff](https://via.placeholder.com/10/ffffff?text=+)    |
+| `color: #E9E8E8;`            | `#E9E8E8`     | ![#E9E8E8](https://via.placeholder.com/10/E9E8E8?text=+) |
+| `color: #DC5F00;`            | `#DC5F00`     | ![#DC5F00](https://via.placeholder.com/10/DC5F00?text=+) |
+| `color: #EEEEEE;`            | `#EEEEEE`     | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) |
+| `background-color: #20262E;` | `#20262E`     | ![#20262E](https://via.placeholder.com/10/20262E?text=+) |
 
 ## Demo
 
 - Link to the repository: https://github.com/MaxKeable/SpaceLink
-- Link to the Demo Site: 
+- Link to the Demo Site:
 
 ## Documentation
 
 [Powerpoint-doc](https://addlinkher.com)
 [Google-Doc](https://docs.google.com/document/d/1HqK1E2jR9fd4uKlJZn3hGP68nIQuFSlsn2WURuq9L0U/edit?usp=sharing)
 
-
 ## Screenshots
 
 ![insewrt app App Screenshot here](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-* Insert
 
+- Insert
 
 # Marking criteria
+
 ## Technical Acceptance Criteria: 25%
 
 - Satisfies the following code requirements:
@@ -94,7 +91,8 @@ journey to explore the unknown reaches of space with SpaceX.
 - Application user interface style is clean and polished.
 - Application is responsive.
 
-## Presentation: 10% 
+## Presentation: 10%
+
 - Your group should present using Powerpoint or a similar presentation software.
 - Every group member should speak during the presentation.
 - Your presentation should follow the Project Presentation Template.
@@ -105,13 +103,12 @@ journey to explore the unknown reaches of space with SpaceX.
 
 ## Acknowledgements/ Reference
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
- - [Globe.gl Documentation] (https://globe.gl/)
- - [Bulma Documentation] (https://bulma.io/documentation/)
- - [Markdown License Badge] (https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
-
+- [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+- [Awesome README](https://github.com/matiassingers/awesome-readme)
+- [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+- [Globe.gl Documentation] (https://globe.gl/)
+- [Bulma Documentation] (https://bulma.io/documentation/)
+- [Markdown License Badge] (https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
 ## FAQ
 
@@ -121,21 +118,21 @@ Rockets are an integral part of space exploration, and some people may be passio
 
 #### Why did we choose to use the Bulma CSS Frame Work
 
-Answer 2
+Bulma is a mobile-first CSS framework, offering optimum site responsiveness. Build a site one time and watch it work across any device. Compatible with the majority of current browsers.
 
-#### Why did we choose to add the globe.gl 
+#### Why did we choose to add the globe.gl
 
 The globe.gl library was added to the project to provide an interactive and visually engaging way to display information about SpaceX launches. It allows users to see where the launches are taking place and get a better sense of the global impact of space exploration.
 
 #### What were the Api's that we used
 
 - NASA's photo of the day
-- Globe.gl 
+- Globe.gl
 - SpaceX API
 
-#### How is the project interactive 
+#### How is the project interactive
 
-The project is interactive in that it accepts and responds to user input. Users can browse through information about SpaceX launches, filter launches by various criteria, and view launch details. The website also uses modals instead of JS alerts, prompts, or confirms, which provides a smoother and more visually appealing user experience. 
+The project is interactive in that it accepts and responds to user input. Users can browse through information about SpaceX launches, filter launches by various criteria, and view launch details. The website also uses modals instead of JS alerts, prompts, or confirms, which provides a smoother and more visually appealing user experience.
 
 #### What is the concept of the project
 
