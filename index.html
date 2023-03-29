@@ -20,6 +20,8 @@
 </head>
 
 <body>
+
+  <!-- creating nav bar and adding anchor tags -->
   <nav class="navbar is-white">
     <div class="navbar-brand">
       <a href="" class="navbar-item">
@@ -39,6 +41,7 @@
     </div>
   </nav>
 
+  <!-- displaying launch countdown timer -->
   <div class="time-to-launch">
     <div class="time-to-launch">
       <h3 class="">!!Time to Launch!!</h3>
@@ -65,7 +68,7 @@
     </div>
   </div>
 
-
+<!-- creating dashboard info -->
   <section class="mx-2 is-6 dashboard-info my-6 ">
     <div class="columns is-multiline is-mobile is-centered">
       <div class="column is-12-mobile is-3-desktop box is-2 is-min-desktop mx-3 tile is-flex">
@@ -100,7 +103,7 @@
       </div>
     </div>
   </section>
-
+<!-- displaying weather data of current launch -->
   <section>
     <div class="columns box weather">
       <h2 class="mx-4">Weather Info:</h2>
@@ -119,11 +122,12 @@
     </div>
   </section>
 
+  <!-- button to see future launch information  -->
   <section>
     <div class="future-launch-button" id="future-launch-button">
       <button id="future-launch">Future Launches</button>
     </div>
-
+<!-- future launch information -->
     <div class="future-launch hide" id="launch-div">
       <h3>Future Launch Information:</h3>
       <div class="future-launch-items">
@@ -148,6 +152,7 @@
           <p id="future-launch-time"></p>
         </div>
       </div>
+      <!-- buttons to navigate through future launches and navigate to saved launches -->
       <div class="next-prev-buttons">
         <button class="prev-button">Prev</button>
         <button id="saved-launch">Saved Launches</button>
@@ -156,7 +161,7 @@
     </div>
   </section>
 
-
+<!-- displaying saved lanuch info -->
       <div class="modal" id="modal">
         <div class="modal-background"></div>
         <div class="modal-card">
@@ -188,11 +193,13 @@
           </div>
           </section>
 
+
+        <!-- adding globe into frontend-->
   <div id="globe-style">
     <p id="globe"></p>
   </div>
 
-
+<!-- displaying NASA's imge of the day -->
   <section class="">
     <div class="columns is-centered">
       <div class="column is-6">
@@ -204,10 +211,9 @@
     <h4 class="has-text-right is-uppercase mt-2 mr-4 nasa-img-h4">
       NASA's space image of the day
     </h4>
-
-
-
   </section>
+
+  <!-- info section about the site itself -->
   <section class="info-section">
     <div id="our-mission" class="column box mx-4 mission-how is-centered">
       <h3>Our Mission:</h3>
