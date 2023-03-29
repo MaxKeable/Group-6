@@ -61,10 +61,12 @@ p {
     color: #E9E8E8;
 }
 
+
 .globe {
     width: 400px;
     height: 300px;
 }
+
 
 .tile {
     min-width: 200px;
@@ -189,10 +191,19 @@ figure {
     font-size: 1.5em;
 }
 
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+
 .mission-how {
-    max-width: 400px;
     background-color: #20262E;
     box-shadow: #DC5F00 0px 0px 10px;
+    max-width: 600px;
+    min-width: 400px;
 }
 
 .mission-how h3 {
