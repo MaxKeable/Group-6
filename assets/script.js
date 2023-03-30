@@ -422,7 +422,7 @@ const gData = rocketLaunchSites.map((site) => ({
   lat: site.latitude,
   lng: site.longitude,
   str: site.name,
-  size: Math.random() / 3,
+  size: Math.random() / 12,
   color: ["red", "white", "blue", "green"][Math.round(Math.random() * 3)],
 }));
 
