@@ -1,3 +1,14 @@
+
+/**
+ * Represents a web page for displaying information about space missions.
+ * The page includes sections for displaying weather information, upcoming launches,
+ * mission details, and a footer with contact information.
+ *
+ * The page is styled using CSS classes defined in this file and is responsive to
+ * different screen sizes.
+ */
+
+
 :root {
   --font-color: #fff;
   --main-text-color: #e9e8e8;
