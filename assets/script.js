@@ -127,10 +127,10 @@ function displayData(data) {
   }
 
   // if next rocket launch time is not available, timer context will display "Data not returned"
-  if (dailyResult.win_open == null) {
+  if (dailyResult.win_open == null && dailyResult.t0 == null) {
     timer.text("Data not returned");
   } else {
-    let launchTime = new Date(dailyResult.win_open);
+    let launchTime = new Date(dailyResult.win_open ?? dailyResult.t0);
     setInterval(function () {
       timeBetweenDates(launchTime);
     }, 1000);
