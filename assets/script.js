@@ -30,6 +30,7 @@ burger.on("click", function (event) {
   event.preventDefault();
   menu.toggleClass("is-active");
 });
+//changes
 
 // Fetch daily NASA image
 function getNasaImg() {
